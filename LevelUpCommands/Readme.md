@@ -1,4 +1,64 @@
-# Disclaimer & Scope
+# How to add the Custom Commands in this folder to your Level Up for Dynamics 365 / Power Apps
+
+1. Make sure you have the newest version of Level Up installed in your edge browser. This can be found either via the direct link to the official
+[Level Up Microsoft Edge Add-on](https://microsoftedge.microsoft.com/addons/detail/level-up-for-dynamics-365/mdjlgdkgmhlmcikdmeehcecolehipicf), or by naviating in Edge to the *Settings and more* menu which can be found in the top right "..." (Alt+F)  
+![Edge Extensions](./Screenshots/Edge_Extensions.png)
+
+- Click on Extension
+- Get extensions for Microsoft Edge
+- Search for *Level Up*
+![Level Up](./Screenshots/Search_LevelUp.png) and select Level Up for Dynamics 365 / Power Apps which will navigate you to the same page as the direct link above
+- Click on the blue button *Get*
+- Read the Notification / Warning that is displayed and decide if you want to add the extension to you browser. By clicking on *Add extension* you are granting the permissions displayed to this extension
+![Warning](./Screenshots/Warning.png)
+
+- After a few seconds the installation process of the browser extension is finished and a confirmation dialog is displayed ![Consirmation](./Screenshots/Confirmation.png)
+- Next click on *View Extension* and select to *Pin* the extension in the Browser menu bar ![Pin](./Screenshots/pin.png)
+
+**Level Up has now been added succesfully to your edge browser**
+2. Add the Custom Command
+
+- Custom Commands are not available in the simple mode of Level Up which is opened by default when clicking on the small icon. You can either click on default at the buttom of the LEvel Up Screen or directly open the version by right-clicking on the icon and selecting *Open in Sidebar*
+![Open in Sidebar](./Screenshots/Open_in_Sidebar.png)
+- If you are not logged in to a Model Driven App in your browser where you are opening Level up, you will see an error message: ![ModelDrivenApp](./Screenshots/ModelDrivenApp.png)
+- Once you have opened a Model Driven App, the details of Level Up will be visible including the new section to add Commands, which will be empty if you have not installed some commands already.
+![Add Command](./Screenshots/AddCommand.png)
+- Click on the **+** icon to add a new command
+- In the following dialog either start creating your own command by using JS and the Dataverse XRM API or add the commands that are stored in this github repository or the official Level Up Community Commands repository mentioned below. In case you are trying outthe commands in this repository, please read the disclaimer below, as these are commands which have been vibe coded and which are not tested for production use. (More information below)
+- If you are trying out these commands you first need to install the **Helper Overlay** which must be activated for each of my commands as I wanted to have a consistent design and functionality for the commands which I were creating for myself. Please note that there is always a full JS file which may be to large to use and then one version where the code has been minified. I am always using the minified version for my personal commands 
+
+![1st Command](./Screenshots/1stCommand.png)
+
+- Add a Command Name e.g. *Commuinty Helper*
+- Add an Icon by clicking on "Win+." on a Windows PC and select the one that fits best for you
+- Click on Create Command
+- When you are Creating your own commands, or sometimes when work is in progress, you will see some warnings or error messages and the code in the JavaScript Editor is either underlined with red or you can see yellow lines besides the code. Then creating the Command is not possible and you have to solve the errors first (typically something like missing braces, missing parentheses, missing brackets, missing closing quotes etc. which can be pretty hard to find)
+- Nevertheless, when everything is correct and Create Command is working for you, you will see the first Command button - Congratulations.
+
+![Success](./Screenshots/Success.png)
+- In case you are using the command from this repository, clicking on the *Community Helper* Command wil just initialize the helper and you have to install the 2nd Command for the real Command 😉
+
+![Commmand executed succesfully](./Screenshots/ExecutionSuccess.png)
+
+3. Add the next Command *Field Focus*
+- Follow the steps above and add a name, Icon, and the minified js to a 2nd command and click on Create Command
+![Field Focus](./Screenshots/FieldFocus.png)
+- Now you have two icons in your command palette
+
+![2nd Command](./Screenshots/2ndCommand.png)
+
+- Make sure that you are in a Model Driven App, in Form Context (not in a View or Dashboard etc., as this command will only help you on form level)
+- Click on Field Focus (make sure that you had activated the helper first, otehrwise a message will appear, that the Helper Overlay is missing)
+- Now the Field Focus 2.0 Command is visible in front of you form. This command will especially help you, when you have lots of fields on your form, hidden fields or tabs and you want to find a field quickly.
+  - You can search for logical name or display name
+  - You can switch between finding a field, or tab
+  - in the list of field you will see, if the field or tab is currently visible or hidden, and you will already see the information on which tab and in which section a field is located
+  - If you click on the field name in the Field Focus, the command will directly navigate you to the field, highlight the field and if hidden the field will be made visible
+![FieldFocusCommand](./Screenshots/FieldFocusCommand.png)
+
+Please continue reading the diclaimer!
+
+## Disclaimer & Scope
 
 This repository contains custom **Level Up commands** (based on JavaScript) that are designed to be used **only as an extension to the "Level Up for Dynamics 365/Power Apps" browser extension in Microsoft Edge**.  
 These commands are currently targeted and tested against **Level Up version 4.x** (Edge build released around August 2025). They are **not** intended for, nor tested with, earlier versions of Level Up or Level Up extensions in other browsers.
