@@ -11,6 +11,7 @@
 ![Level Up](./Screenshots/Search_LevelUp.png)
 
   and select Level Up for Dynamics 365 / Power Apps which will navigate you to the same page as the direct link above
+  
 - Click on the blue button *Get*
 - Read the Notification / Warning that is displayed and decide if you want to add the extension to you browser. By clicking on *Add extension* you are granting the permissions displayed to this extension
 
