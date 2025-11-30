@@ -1,32 +1,44 @@
 # How to add the Custom Commands in this folder to your Level Up for Dynamics 365 / Power Apps
 
-1. Make sure you have the newest version of Level Up installed in your edge browser. This can be found either via the direct link to the official
-[Level Up Microsoft Edge Add-on](https://microsoftedge.microsoft.com/addons/detail/level-up-for-dynamics-365/mdjlgdkgmhlmcikdmeehcecolehipicf), or by naviating in Edge to the *Settings and more* menu which can be found in the top right "..." (Alt+F)  
+1. Make sure you have the newest version of Level Up installed in your edge browser. This can be found either via the direct link to the official [Level Up Microsoft Edge Add-on](https://microsoftedge.microsoft.com/addons/detail/level-up-for-dynamics-365/mdjlgdkgmhlmcikdmeehcecolehipicf), or by naviating in Edge to the *Settings and more* menu which can be found in the top right "..." (Alt+F)
+
 ![Edge Extensions](./Screenshots/Edge_Extensions.png)
 
 - Click on Extension
 - Get extensions for Microsoft Edge
 - Search for *Level Up*
-  ![Level Up](./Screenshots/Search_LevelUp.png)
+
+![Level Up](./Screenshots/Search_LevelUp.png)
+
   and select Level Up for Dynamics 365 / Power Apps which will navigate you to the same page as the direct link above
 - Click on the blue button *Get*
 - Read the Notification / Warning that is displayed and decide if you want to add the extension to you browser. By clicking on *Add extension* you are granting the permissions displayed to this extension
-  ![Warning](./Screenshots/Warning.png)
+
+![Warning](./Screenshots/Warning.png)
 
 - After a few seconds the installation process of the browser extension is finished and a confirmation dialog is displayed
-  ![Consirmation](./Screenshots/Confirmation.png)
+
+![Consirmation](./Screenshots/Confirmation.png)
+
 - Next click on *View Extension* and select to *Pin* the extension in the Browser menu bar
-  ![Pin](./Screenshots/pin.png)
+
+![Pin](./Screenshots/pin.png)
 
 **Level Up has now been added succesfully to your edge browser**
 2. Add the Custom Command
 
 - Custom Commands are not available in the simple mode of Level Up which is opened by default when clicking on the small icon. You can either click on default at the buttom of the LEvel Up Screen or directly open the version by right-clicking on the icon and selecting *Open in Sidebar*
+
 ![Open in Sidebar](./Screenshots/Open_in_Sidebar.png)
+
 - If you are not logged in to a Model Driven App in your browser where you are opening Level up, you will see an error message:
-  ![ModelDrivenApp](./Screenshots/ModelDrivenApp.png)
+
+![ModelDrivenApp](./Screenshots/ModelDrivenApp.png)
+
 - Once you have opened a Model Driven App, the details of Level Up will be visible including the new section to add Commands, which will be empty if you have not installed some commands already.
-  ![Add Command](./Screenshots/AddCommand.png)
+
+![Add Command](./Screenshots/AddCommand.png)
+
 - Click on the **+** icon to add a new command
 - In the following dialog either start creating your own command by using JS and the Dataverse XRM API or add the commands that are stored in this github repository or the official Level Up Community Commands repository mentioned below. In case you are trying outthe commands in this repository, please read the disclaimer below, as these are commands which have been vibe coded and which are not tested for production use. (More information below)
 - If you are trying out these commands you first need to install the **Helper Overlay** which must be activated for each of my commands as I wanted to have a consistent design and functionality for the commands which I were creating for myself. Please note that there is always a full JS file which may be to large to use and then one version where the code has been minified. I am always using the minified version for my personal commands 
@@ -40,13 +52,17 @@
 - Nevertheless, when everything is correct and Create Command is working for you, you will see the first Command button - Congratulations.
 
 ![Success](./Screenshots/Success.png)
+
 - In case you are using the command from this repository, clicking on the *Community Helper* Command wil just initialize the helper and you have to install the 2nd Command for the real Command 😉
 
 ![Commmand executed succesfully](./Screenshots/ExecutionSuccess.png)
 
 3. Add the next Command *Field Focus*
+
 - Follow the steps above and add a name, Icon, and the minified js to a 2nd command and click on Create Command
+
 ![Field Focus](./Screenshots/FieldFocus.png)
+
 - Now you have two icons in your command palette
 
 ![2nd Command](./Screenshots/2ndCommand.png)
@@ -58,6 +74,7 @@
   - You can switch between finding a field, or tab
   - in the list of field you will see, if the field or tab is currently visible or hidden, and you will already see the information on which tab and in which section a field is located
   - If you click on the field name in the Field Focus, the command will directly navigate you to the field, highlight the field and if hidden the field will be made visible
+
 ![FieldFocusCommand](./Screenshots/FieldFocusCommand.png)
 
 Please continue reading the diclaimer!
